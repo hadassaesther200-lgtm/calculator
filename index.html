@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Délices Gourmands - Cuisine Moderne</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Début du style CSS pour la mise en page et le design -->
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #faf6f2; }
+        header { background: #b23e2a; color: #fff; padding: 30px 0; text-align: center; }
+        nav { background: #fff; box-shadow: 0 2px 4px #eee; }
+        nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; }
+        nav li { margin: 0 20px; }
+        nav a { text-decoration: none; color: #b23e2a; font-weight: bold; }
+        .hero { background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80') center/cover; color: #fff; padding: 100px 20px; text-align: center; }
+        .hero h1 { font-size: 3em; margin-bottom: 10px; }
+        .section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+        .section h2 { color: #b23e2a; margin-bottom: 30px; }
+        .services { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; }
+        .service { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #eee; padding: 30px; width: 300px; text-align: center; }
+        .service img { width: 80px; margin-bottom: 15px; }
+        .gallery { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+        .gallery img { width: 250px; border-radius: 8px; box-shadow: 0 2px 8px #eee; }
+        footer { background: #b23e2a; color: #fff; text-align: center; padding: 20px 0; margin-top: 40px; }
+        @media (max-width: 800px) {
+            .services, .gallery { flex-direction: column; align-items: center; }
+        }
+    </style>
+    <!-- Fin du style CSS -->
+</head>
+<body>
+    <!-- En-tête du site avec le nom et le slogan -->
+    <header>
+        <h1>Délices Gourmands</h1>
+        <p>La passion de la cuisine moderne et raffinée</p>
+    </header>
+    <!-- Barre de navigation principale -->
+    <nav>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#services">Nos Services</a></li>
+            <li><a href="#galerie">Galerie</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Section d'accueil avec une image de fond et un message de bienvenue -->
+    <section class="hero" id="accueil">
+        <h1>Bienvenue chez Délices Gourmands</h1>
+        <p>Découvrez une cuisine créative, moderne et savoureuse pour tous vos événements.</p>
+    </section>
+    <!-- Section présentant les différents services proposés -->
+    <section class="section" id="services">
+        <h2>Nos Services</h2>
+        <div class="services">
+            <!-- Service 1 : Chef à domicile -->
+            <div class="service">
+                <img src="https://img.icons8.com/color/96/chef-hat.png" alt="Chef à domicile">
+                <h3>Chef à domicile</h3>
+                <p>Profitez d’un chef professionnel chez vous pour des repas inoubliables.</p>
+            </div>
+            <!-- Service 2 : Service traiteur -->
+            <div class="service">
+                <img src="https://img.icons8.com/color/96/catering.png" alt="Service traiteur">
+                <h3>Service traiteur</h3>
+                <p>Des menus personnalisés pour vos réceptions, mariages et événements d’entreprise.</p>
+            </div>
+            <!-- Service 3 : Cours de cuisine -->
+            <div class="service">
+                <img src="https://img.icons8.com/color/96/cooking-book.png" alt="Cours de cuisine">
+                <h3>Cours de cuisine</h3>
+                <p>Apprenez les secrets de la gastronomie moderne avec nos ateliers ludiques.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Section galerie d'images de plats -->
+    <section class="section" id="galerie">
+        <h2>Galerie</h2>
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80" alt="Plat 1">
+            <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80" alt="Plat 2">
+            <img src="https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=400&q=80" alt="Plat 3">
+            <img src="https://images.unsplash.com/photo-1523987355523-c7b5b0723c6a?auto=format&fit=crop&w=400&q=80" alt="Plat 4">
+        </div>
+    </section>
+    <!-- Section de contact avec un formulaire -->
+    <section class="section" id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label>Nom<br><input type="text" name="nom" required></label><br><br>
+            <label>Email<br><input type="email" name="email" required></label><br><br>
+            <label>Message<br><textarea name="message" rows="5" required></textarea></label><br><br>
+            <button type="submit" style="background:#b23e2a;color:#fff;padding:10px 30px;border:none;border-radius:5px;">Envoyer</button>
+        </form>
+    </section>
+    <!-- Pied de page du site -->
+    <footer>
+        &copy; 2025 Délices Gourmands. Tous droits réservés.
+    </footer>
+</body>
+</html>
